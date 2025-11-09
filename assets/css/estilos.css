@@ -1,0 +1,269 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /*controlo medidas*/
+}
+
+/*estilo menu-derecho*/
+.menu-derecho {
+    float: right;
+    word-spacing: 16px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.menu-derecho a {
+    text-decoration: none;  
+    border-radius: 2px;
+}
+.menu-derecho a:hover {
+    background-color: #1886A4;
+    color: #eee;
+    padding: 2px;
+}
+.menu-derecho a:active {
+    background-color:  #1886A4;
+    color: #EEE;
+}
+/*estilo mouse over link*/
+a:active {
+    color:#1c411c  
+}
+
+/*estilo logo-enlace*/
+.logo-enlace img {
+    width: auto;
+    height: 150px;
+}
+
+/*estilo header*/
+.header {
+    background-color:  #fff7e4;
+    clear: both;/*se solapaban los 2 header*/
+}
+body {
+    line-height: 1.6;/*espacio entre las líneas*/
+}
+
+/*estilo para menu parte de arriba - nav*/
+nav {
+    position: sticky;
+}
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 40px;
+   
+}
+nav ul li a {
+    font-size: 1em;
+    display: inline-block;
+    text-decoration: none;
+    justify-content: center;
+    background-color:  #2E7D32;
+    color:  #F6FBFF;
+    padding: 6px;
+    border-radius: 4px;
+}
+nav ul li a:hover {
+    background-color: #1886A4;
+    color: #eee;
+    padding: 7px;
+}
+
+/*estilo de titulos y parrafo*/
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    color: #266b29; 
+    text-align: center;
+    font-weight: bold;
+}
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: #212121;    
+}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    color: #7e8385;
+}
+
+section {
+    width: 100%;
+    overflow: hidden;/*para que los float no se desborden*/
+    margin-top: 10px;
+
+}
+/*a la izqueirda*/
+article {
+    float: left;
+    width: 60%;
+    padding: 10px;
+}
+
+/*a la derecha*/
+aside {
+    float: right;
+    width: 30%;
+    padding: 10px;
+    margin-top: 0;/*queda mucho espacio arriba del aside*/
+}
+
+/*estilo del form*/
+.formulario {
+    float: right;
+    width: 30%; /*igual que el aside*/
+    padding: 10px;
+    clear: right;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"]{
+    background-color:  #F6FBFF;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 200px;
+}
+textarea {
+    background-color:  #F6FBFF;
+}
+button {
+    background-color:  #2E7D32;
+    color:  #F6FBFF;
+    padding: 5px;
+    border-radius: 7px;
+    border: none;
+}
+button:hover {
+    background-color: #1886A4;
+    color: #eee;
+    padding: 4px;
+}
+
+/*estilo de footer, cookies y social media*/
+.mapa {
+    float: left;
+    width: 60%;
+    margin: 10px;
+}
+.datosDeContacto { 
+    width: 35%;
+    display: inline;
+    padding: 15px;
+}
+.politicaPrivacidad,.mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  clear: both;/*se solapaban*/
+}
+.footer {
+    border-top:1px solid #e5e7eb;
+    clear: both;
+}
+/*whatsapp fijo a la derecha*/
+.whatsapp-fijo {
+    position: fixed;
+    right: 16px;
+    bottom: 15px;
+    width: 58px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+}
+/*pagina servicios*/
+.servicios-img img{
+    width: auto;
+    height: 150px;
+}
+
+/*estilo tabla con padre */
+.contenedor {
+    width: 100%;
+}
+table {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*width: 100%; esto haria lo mismo que el contenedor (lo cree despues)?? */
+    border-collapse: collapse; /* Une los bordes */
+    margin: 20px auto;
+}
+
+caption {
+    caption-side: bottom;/*titulo abajo*/
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+th {
+    background-color: #3FB7B1;
+    color: #212121; /*para que no cambie el texto con hover*/
+    font-size: 1em;
+}
+th, td {
+    border: 1px solid #555;
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 1em;
+} 
+/*primera linea NO SE APRECIA AL TENER FORMATO TAMBIEN EN LAS CELDAS IMPARES*/
+tbody tr:first-child {
+    background-color:  #ec551a;
+}
+/*uso de even y odd*/
+tbody tr:nth-child(odd) {/*impares*/
+    background-color: #7e8385;
+}
+tr:nth-child(even) {/*pares*/
+    background-color:  #EEEEEE; 
+   
+}
+tr:hover {
+    background-color: #1A6EEB;
+    color: #F6FBFF;
+}
+
+/*estilo para los estados de los enlaces*/
+nav a:link {
+    color:  #86a418;
+}
+nav a:visited {
+    color: #101cc7;
+}
+aside a:link {
+   color: #86a418; 
+}
+aside a:visited {
+    color: #c75910;
+}
+aside a:hover {
+    color: #1886A4;
+}
+aside a:active {
+    color: #18a442;
+}
+footer a:link {
+    color: #86a418;
+    text-decoration: none;
+}
+footer a:visited {
+    color: #101cc7;
+}
+footer a:active {
+     color: #18a442;
+}
+footer a:hover {
+    color: #1886A4;
+    text-decoration: dotted;
+}
